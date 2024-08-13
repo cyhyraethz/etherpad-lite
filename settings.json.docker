@@ -677,6 +677,17 @@
         }
       ]
     },
+  "ep_openid_connect": {
+    "issuer": "${OPENID_CONNECT_ISSUER}",
+    "client_id": "${OPENID_CONNECT_CLIENT_ID}",
+    "client_secret": "${OPENID_CONNECT_CLIENT_SECRET}",
+    "base_url": "${OPENID_CONNECT_BASE_URL}",
+    "user_properties": {
+      "displayname": {
+        "claim": "${OPENID_CONNECT_DISPLAY_NAME_CLAIM}"
+      }
+    }
+  }
 
   /* Set the time to live for the tokens
      This is the time of seconds a user is logged into Etherpad
